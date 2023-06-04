@@ -1,0 +1,15 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+.toolbar-btn {
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+/*.toolbar-btn:nth-child(2n) {*/
+/*    margin-left: 10px;*/
+/*}*/

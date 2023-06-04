@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-icons {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+
+.main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* CARD VIEW COMPONENTS*/
+.cards-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.shop-card {
+    width: 250px;
+    height: 250px;
+
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f7f3f3;
+
+    text-align: center;
+    box-shadow: 0px 12px 10px 1px rgba(201, 201, 201, 0.98);;
+}
+
+.shop-card h2 {
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.shop-card .container-img {
+    position: relative;
+    height: 130px;
+    overflow: hidden;
+
+}
+.shop-card .container-img .card-img {
+    position: absolute;
+    left: 0;
+    top: -75px;
+    width: 100%;
+    height: auto;
+}
+
+.shop-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+}
+
+.shop-card .card-footer .btn-add-cart {
+    width: 110px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 20px;
+    color: red;
+    text-transform: uppercase;
+    /*background-color: white;*/
+}
+
+
+/* LIST VIEW COMPONENTS*/
+.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    background-color: #f7f3f3;
+}
+
+.shop-item .container-img {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.shop-item .container-img .item-img {
+    position: absolute;
+    left: 0;
+    top: -35px;
+
+    width: 100%;
+    height: auto;
+}
+
