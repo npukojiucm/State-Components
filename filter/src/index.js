@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import Toolbar from "./components/Toolbar";
 import reportWebVitals from './reportWebVitals';
+import Portfolio from './Portfolio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Toolbar filters={["All", "Websites", "Flayers", "Business Cards"]}/>
+    <Portfolio />
   </React.StrictMode>
 );
 

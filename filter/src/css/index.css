@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.page {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+.toolbar-btn {
+    min-width: 50px;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+.toolbar-btn.selected {
+    background-color: black;
+    color: white;
+}
+
+.toolbar-btn:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.project-list {
+    column-count: 3;
+    /*columns-gap: 20px;*/
+}
+
+.list-item {
+    display: inline;
+    width: 300px;
+    height: auto;
+    /*margin-left: 10px;*/
+    /*margin-bottom: 10px;*/
+}

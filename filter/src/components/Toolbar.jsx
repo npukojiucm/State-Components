@@ -1,12 +1,23 @@
-import '../css/Toolbar.css';
-
 export default function Toolbar(props) {
-    const filters = props.filters.map(filter =>
-        <button className="toolbar-btn" type={"button"}>{filter}</button>);
+    const mappers = (filter) => {
+        let _className = "toolbar-btn"
+        if (filter === props.selected) {
+            _className = "toolbar-btn selected"
+        }
+
+        return <button
+            className={`${_className}`}
+            type={"button"}
+            data-name={filter}
+            onClick={(event) => props.onSelectedFilter(event)}>
+                {filter}
+            </button>
+    }
+    const filters = props.filters.map(filter => mappers(filter))
 
     return (
-        <div className="toolbar">
+        <nav className="toolbar">
             {filters}
-        </div>
+        </nav>
     )
 }
